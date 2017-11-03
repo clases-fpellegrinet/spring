@@ -8,7 +8,7 @@
 <body>
 	<form action="login">
 	<div class="login">
-	<label class="user">Usuario: </label><input type="text" name="user"><br>
+	<label class="user">Usuariooooooo: </label><input type="text" name="user"><br>
 	</div>
 	<br>
 	<div class="login">
