@@ -13,5 +13,8 @@
 		<button type="submit" formaction="modify">Modificar</button>
 		<button type="submit" formaction="search">Buscar</button>
 	</form>
+	<label class="user">${dni}</label>
+	<label class="user">${name}</label>
+	<label class="user">${mail}</label>
 </body>
 </html>
