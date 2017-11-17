@@ -10,6 +10,9 @@ import com.ucse.model.User;
 public class UsersService {
 	@Autowired
 	private UserDao userDao;
+	public void setUserDao(UserDao userDao) {
+		this.userDao = userDao;
+	}
 	
 	public void create(User user) {
 		userDao.create(user);

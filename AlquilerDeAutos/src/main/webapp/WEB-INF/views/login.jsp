@@ -3,12 +3,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link type="text/css" rel="stylesheet" href="resources/login.css">
+<link rel="stylesheet" type="text/css" href="resources/css/login.css"/>
 </head>
 <body>
 	<form action="login">
 	<div class="login">
-	<label class="user">Usuariooooooo: </label><input type="text" name="user"><br>
+	<label class="user">Usuario: </label><input type="text" name="user"><br>
 	</div>
 	<br>
 	<div class="login">

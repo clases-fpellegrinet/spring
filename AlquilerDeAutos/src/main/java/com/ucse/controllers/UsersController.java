@@ -13,16 +13,20 @@ public class UsersController {
 
 	@Autowired
 	private UsersService usersService;
+	public void serUserService(UsersService usersService) {
+		this.usersService = usersService;
+	}
 	@RequestMapping("/create")
 	public ModelAndView users() {
 		/*ModelAndView mv = new ModelAndView("createUser");
 		return mv;*/
-		User user = new User(32059919L, "Fede", "fede@pelle.com");
+		User user = new User(32059919L, "Fede", "Pellegrinet", "fede@pelle.com");
 		usersService.create(user);
 		ModelAndView mv = new ModelAndView("mainUsers");
 		mv.addObject("dni", user.getDni());
-		mv.addObject("name", user.getName());
-		mv.addObject("mail", user.getMail());
+		mv.addObject("firstname", user.getFirstname());
+		mv.addObject("lastname", user.getLastname());
+		mv.addObject("mail", user.getEmail());
 		return mv;
 	}
 	

@@ -14,7 +14,8 @@
 		<button type="submit" formaction="search">Buscar</button>
 	</form>
 	<label class="user">${dni}</label>
-	<label class="user">${name}</label>
+	<label class="user">${firstname}</label>
+	<label class="user">${lastname}</label>
 	<label class="user">${mail}</label>
 </body>
 </html>

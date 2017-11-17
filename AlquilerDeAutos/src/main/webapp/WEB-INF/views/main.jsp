@@ -13,6 +13,9 @@
 			<button type="submit" formaction="cars">Automoviles</button>
 			<button type="submit" formaction="rents">Alquileres</button>
 		</form>
+		<body>
+		<label class="user">lalala</label>
+		</body>
 	</center>
 </body>
 </html>
