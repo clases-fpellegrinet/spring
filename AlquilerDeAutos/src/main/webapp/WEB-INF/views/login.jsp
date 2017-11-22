@@ -14,9 +14,7 @@
 	<div class="login">
 	<label class="password">Password: </label><input type="password" name="password"><br>
 	</div>
-	<h3>
-		<input type="submit" value="Enviar"/>
-	</h3>
+	<button class="loginBtn loginBtn--google">Login</button>
 	</form>
 </body>
 </html>
