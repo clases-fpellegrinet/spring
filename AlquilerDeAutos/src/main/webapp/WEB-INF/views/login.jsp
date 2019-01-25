@@ -6,15 +6,15 @@
 <link rel="stylesheet" type="text/css" href="resources/css/login.css"/>
 </head>
 <body>
-	<form action="login">
+	<form class="login_form" action="login">
 	<div class="login">
-	<label class="user">Usuario: </label><input type="text" name="user"><br>
+	<label class="input_label">Usuario: </label><input type="text" name="user"><br>
 	</div>
 	<br>
 	<div class="login">
-	<label class="password">Password: </label><input type="password" name="password"><br>
+	<label class="input_label">Password: </label><input type="password" name="password"><br>
 	</div>
-	<button class="loginBtn loginBtn--google">Login</button>
+	<button class="login_button">Login</button>
 	</form>
 </body>
 </html>

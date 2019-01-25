@@ -46,6 +46,7 @@ http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 		<property name="annotatedClasses">
 			<list>
 				<value>com.ucse.model.User</value>
+				<value>com.ucse.model.Login</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -61,6 +62,12 @@ http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 	</bean>
 	<bean id="usersService" class="com.ucse.services.UsersService">
 		<property name="userDao" ref="userDao"></property>
+	</bean>
+	<bean id="loginDao" class="com.ucse.dao.LoginDao">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
+	<bean id="loginService" class="com.ucse.services.LoginService">
+		<property name="loginDao" ref="loginDao"></property>
 	</bean>
 	
 	<tx:annotation-driven transaction-manager="transactionManager"/>
